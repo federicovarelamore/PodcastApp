@@ -1,5 +1,48 @@
-$rojo: green;
+@use "../custom" as *;
+@use "../utils/mixins";
 
-body {
-  background-color: $rojo;
+.site-header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(49, 60, 78, 0.6),
+      rgba(49, 60, 78, 1)
+    ),
+    url(../../../build/img/header.jpg);
+
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .logo {
+    max-width: 20rem;
+    margin: 0 auto;
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
+  }
+
+  .contenido {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    @include media-breakpoint-up(md) {
+      max-width: 50%;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-top: 15rem;
+      padding-bottom: 15rem;
+      max-width: 40%;
+    }
+    h1 {
+      font-size: 4.5rem;
+      @include media-breakpoint-up(lg) {
+        font-size: 6rem;
+      }
+    }
+    .boton {
+      display: block;
+      @include media-breakpoint-up(md) {
+        display: inline;
+      }
+    }
+  }
 }
