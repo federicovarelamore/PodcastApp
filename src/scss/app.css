@@ -11357,4 +11357,49 @@ textarea.form-control-lg {
   background-color: #84d9bc;
   display: block;
   margin: -1.5rem 0 0 0;
+}
+
+.svg {
+  transform: rotate(180deg);
+  margin: 0 -35px 0 0;
+}
+
+.beneficios {
+  background-color: #84d9bc;
+  margin-left: 0;
+  margin-right: 0;
+}
+.beneficios h2 {
+  color: #313c4e;
+  display: inline-block;
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .beneficios h2 {
+    margin-top: 0;
+  }
+}
+.beneficios h2::after {
+  content: "";
+  height: 1rem;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  margin: -1.5rem 0 0 0;
+}
+.beneficios .img-beneficios {
+  transition: all 300ms ease;
+}
+@media (min-width: 768px) {
+  .beneficios .img-beneficios:hover {
+    transform: rotate(8deg) scale(1.1);
+  }
+}
+.beneficios .parrafo-50 {
+  width: 70%;
+}
+@media (min-width: 768px) {
+  .beneficios .parrafo-50 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=app.css.map */

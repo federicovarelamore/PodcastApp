@@ -1,0 +1,31 @@
+@use "../custom" as *;
+@use "../utils/mixins" as m;
+
+.svg {
+  transform: rotate(180deg);
+  margin: 0 -35px 0 0;
+}
+
+.beneficios {
+  background-color: $primary;
+  margin-left: 0;
+  margin-right: 0;
+  h2 {
+    @include m.headingBorder($secondary, $white);
+  }
+  .img-beneficios {
+    transition: all 300ms ease;
+  }
+  @include media-breakpoint-up(md) {
+    .img-beneficios:hover {
+      transform: rotate(8deg) scale(1.1);
+    }
+  }
+
+  .parrafo-50 {
+    width: 70%;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+    }
+  }
+}
