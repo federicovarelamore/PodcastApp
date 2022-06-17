@@ -1,0 +1,5 @@
+@use "../custom" as *;
+
+.boton:hover {
+  background-color: darken($color: $primary, $amount: 15%);
+}

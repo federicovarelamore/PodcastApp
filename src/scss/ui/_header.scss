@@ -40,8 +40,10 @@
     }
     .boton {
       display: block;
+      margin-top: 2rem;
       @include media-breakpoint-up(md) {
-        display: inline;
+        display: inline-block;
+        margin-top: 2rem;
       }
     }
   }
