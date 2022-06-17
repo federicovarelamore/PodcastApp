@@ -1,11 +1,6 @@
 @use "../custom" as *;
 @use "../utils/mixins" as m;
 
-.svg {
-  transform: rotate(180deg);
-  margin: 0 -35px 0 0;
-}
-
 .beneficios {
   background-color: $primary;
   margin-left: 0;
